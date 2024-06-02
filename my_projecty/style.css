@@ -1,0 +1,673 @@
+*{
+    margin:0; padding:0; box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+.page1{
+    position: relative;
+    width:100vw; height: 100vh;
+    background: no-repeat center/cover url("images/main-image-1.jpg");
+}
+.page2{
+    width:100vw; height: 100vh;
+    background-color: rgb(12, 10, 10);
+    overflow-x:hidden;
+}
+.page3{
+    width:100vw; height: 100vh;
+    background-color: rgb(17, 16, 15);
+    overflow-x:hidden;
+}
+.page4{
+    width:100vw; height: 1315.6px;
+    overflow-x: hidden;
+}
+.part1{
+    width:100vw; height: 90vh ;
+    background: no-repeat top/auto url("images/testimonial-bg.jpg");
+    overflow-x:hidden;
+    background-size: 100% 100%;
+}
+.part2{
+    height: 600px;
+    background-color: rgb(15, 15, 16);
+    overflow-x:hidden;
+}
+.page5{
+    width:100vw; height: 100vh;
+    background-color: rgb(27, 27, 29);
+    background: no-repeat center/auto url("images/testimonial1.jpg");
+    display: flex; justify-content: center; align-items: center;
+    overflow-x:hidden;
+}
+.page6{
+    position: relative;
+    width:100vw; height: 100vh;
+    background-color: rgb(14, 13, 13);
+    overflow-x:hidden;
+    display: flex;
+}
+.page7{
+    width:100vw; height: 100vh;
+    background: no-repeat center/auto url("images/footer-bg.jpg");
+    overflow-x: hidden;
+}
+
+.header1{
+    display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+    color:white;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+.header2{
+    height:100px;
+    display: grid; grid-template-columns: 300px 1fr 400px; 
+}
+
+.section1,.section2{
+    display: flex; align-items: center;
+    padding:1em 2em;
+    color:rgb(232, 232, 232);
+    font-family: Radio Canada Big;
+}
+#loc-img,#time-img,#call-img,#email-img{
+    width:20px; margin-right:7px;
+}
+#time-img{
+    margin-left:4em; 
+    margin-right:12px
+}
+
+.section2{
+    justify-content: end;
+}
+#call-img,#email-img{
+    width: 1.1em;
+    margin-right:7px;
+}
+#email-img{
+    width: 20px;
+    margin-left:4em; 
+}
+
+.left-section{
+    display: flex; align-items: end;
+    padding-left:2em;
+}
+#logo-img {
+    width: 80px;
+    margin-right: 0.7em; 
+}
+#logo-name {
+    font-size: 26px;  font-weight: 900;  color: burlywood;
+    align-self: center;
+    margin-top:1em
+}
+
+.middle-section {
+    display: flex; align-items: end; justify-content: center;
+    margin-bottom: 1em; margin-left:8em;
+}
+.option-tags {
+    color: white; font-size: 16px; font-weight: 500;
+    margin-right: 50px; cursor: pointer;
+    position: relative; 
+    font-family: Arial; 
+}
+.option-tags::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 2px double burlywood;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.option-tags:hover::after {
+    transform: scaleX(1);
+}
+
+.option-tags::before {
+    bottom: -6px;
+}
+
+.option-tags:hover {
+    color: #e8e8e8;
+}
+
+.right-section {
+    display: flex; align-items: end; justify-content: end; 
+}
+.right-section div{
+    margin-right: 1.9em;
+    background-color: rgb(188, 145, 89);
+    padding:1em 0.7em 1.1em 0.7em;
+}
+#catering {
+    color: rgb(0, 0, 0); font-size: 17px; font-weight: 800; word-spacing: 4px;
+    font-family: Radio Canada Big
+}
+
+main .section-1{
+    margin-top: 5em;
+    display: flex; flex-direction: column; justify-content: end;
+    align-items: center;
+    gap:1em
+}
+main .section-1 span{
+    color: white;
+    font-family: Lexend Zetta;
+    font-size: 14px;
+}
+#separator {
+    width: 120px;
+}
+main .section-2{
+    display: flex; flex-direction: column;
+     align-items: center; 
+     margin-top:2.5em
+}
+main #title{
+    font-size: 6em; font-weight: 500; color: white;
+    text-align: center;
+    max-width: 50%;  /*instead can also use 'br' tag*/
+    margin: 0 auto;
+    color:rgb(235, 235, 235);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main #phrase{
+    font-size: 18px; color: rgb(220, 219, 219); margin-top: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main .section-3{
+    display: flex; align-items: center; justify-content: center;
+    margin-top:3.5em
+}
+main .menu-button{
+    font-size: 1em; word-spacing: 6px;
+    display: flex; align-items: center; justify-content: center;
+    background-color: transparent; color: wheat;
+    border: 2px solid rgb(188, 145, 89);
+    padding:1.6em 2.4em;
+    border-radius: 40px;
+}
+main .menu-button:hover{
+    opacity: 0.8;
+    border: 4px solid rgb(188, 145, 89);
+}
+main .section-4{
+    position: absolute; 
+    bottom: 3em; right:4em;
+    display: flex; flex-direction: column; 
+    justify-content: center; align-items: center;
+    background-color: burlywood;
+    padding:14px 16px
+}
+ main .section-4 img{
+    width: 60px;
+    height: 60px;
+}
+main .section-4 p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Radio Canada Big;
+}
+
+.page2-section1{
+    display: flex; flex-direction: column; align-items: center;
+    margin-top: 0.7em;
+}
+#page2-title{
+    font-size: 1rem; font-weight: 800;
+    color:wheat; 
+}
+#page2-separator{
+    width: 120px;
+    margin-top:1rem;
+    opacity: 0.8;
+}
+#page2-phrase{
+    font-size: 3.7rem; color:whitesmoke;
+    margin-top:22px
+}
+#lorem{
+    width:40rem;
+    font-size: 1rem;
+    color: white;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+}
+#sec3{
+    margin-left: 3em;
+}
+#pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 24rem;
+    margin-top: -2em;
+}
+
+#breakfast{
+    font-size: 2rem; font-weight: 800; color:wheat; 
+    margin-top:0.6em; 
+}
+
+.container1{
+    display: flex; justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.container2{
+    display: flex; flex-direction: column;  align-items: center;
+}
+
+.mt-10{
+    margin-top: 6em;
+}
+
+#service-img{
+    position: absolute;
+    width:280px; height: 320px;
+    z-index: 2;
+}
+
+
+
+.page3-section1{
+    display: flex; flex-direction: column; align-items: center;
+    margin-top: 0.7em;
+}
+#page3-title{
+    font-size: 1rem; font-weight: 800;
+    color:wheat; 
+}
+#page3-separator{
+    width: 120px;
+    margin-top:1rem;
+    opacity: 0.8;
+}
+#page3-phrase{
+    font-size: 3.7rem; color:whitesmoke;
+    margin-top:22px
+}
+.grid-container-1{
+    margin-top:2em;
+    display: grid;
+    grid-template-columns: 550px 600px;  
+    /* column-gap: 10em; */
+    justify-content: center;
+}
+.left-div{
+    display: flex; flex-direction: column; gap:4em;
+    padding-right:2em;
+    margin-left:-2em;
+    border-right: 1px solid grey;
+}
+.right-div{
+    display: flex; flex-direction: column; gap:4em;
+    margin-right: -2em;
+    margin-left:6em;
+}
+.dish{
+    display: grid; grid-template-columns: 100px 1fr; column-gap: 15px;
+}
+.dish-img{
+    height:100px; width:100px; cursor:grab; 
+}
+.dish-details{
+    display: flex; flex-direction: column;
+    gap:21px;
+}
+
+.dish-name{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left:1px;
+}
+.dish-price{
+    color: khaki;
+    font-size: 25px;
+    align-self: end;
+}
+.dish-ingredients{
+    font-size: 18px;
+    color:rgb(171, 171, 171);
+}
+
+.page3-section2{
+    margin-top:2em;
+    display: flex; flex-direction: column; align-items: center;
+}
+.menu-tagline{
+    font-size: 19px; color:khaki; 
+    margin-bottom: 1em;
+}
+.view-menu-button{
+    font-size: 1em; word-spacing: 6px;
+    display: flex; align-items: center; justify-content: center;
+    background-color: transparent; color: whitesmoke;
+    border: 2px solid rgb(188, 145, 89);
+    padding:1.6em 2.4em;
+    border-radius: 40px;
+}
+.view-menu-button:hover{
+    opacity: 0.8;
+    border: 4px solid rgb(188, 145, 89);
+}
+
+.booking-grid-container{
+    height:600px; 
+    display: grid; grid-template-columns: 50em 30em;
+}
+.form-container{
+    background-color: rgb(15, 13, 13);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding-top: 1em;
+}
+.contact-header{
+    font-size: 3rem;
+    color:whitesmoke;
+    margin-bottom: 0.1em;
+}
+
+.contact-sub{
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.link-text{
+    color: burlywood;
+}
+
+.contact-form{
+    margin-top: 2.4em;
+    width: 90%;
+}
+
+.text-input-container{
+    display: flex;
+    justify-content: space-between;
+    gap:1em
+}
+
+.text-input{
+    width: 24em;
+}
+
+.input{
+    border:1.8px solid rgb(37, 37, 37);
+    background-color: #18181a;
+    padding: 15px 20px;
+    color: whitesmoke;
+    font-size: 0.9rem;
+}
+
+.select-input-container{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input{
+    width: 32%;
+}
+
+.textarea-input{
+    width: 100%;
+    margin-top: 1em;
+    height: 8em;
+    font-size: 1.3em;
+}
+
+.input::placeholder{
+    color: whitesmoke;
+}
+
+.book-button{
+    background-color: burlywood;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 0.7em; font-weight: 900;
+    margin-top: 1em;
+    padding: 20px 20px;
+}
+
+.contact-container{
+    position: relative;
+    background-color: rgb(14, 10, 10);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color:whitesmoke;
+    z-index: 0;
+}
+#contact-pattern{
+    position: absolute;
+    height:37.4em; width:29.9em;
+    z-index: -1;
+}
+.b-request{
+    margin-top:2em;
+    font-size: 1.2em;
+    margin-bottom:9px;
+}
+.b-no{
+    font-size: 2em;
+}
+.loc-heading, .lunch-time, .dinner-time{
+    margin-top:1.6em;
+    margin-bottom:5px;
+    font-size: 1.1em; font-weight: 900;
+}
+#grey-text{
+    margin-top:5px; margin-bottom:1px;
+    color:rgb(140, 140, 140);
+}
+
+.feedback-container{
+    display: flex; flex-direction: column; align-items: center;
+}
+#quotes{
+    width: 30px; height: 30px;
+    margin-top: 3.4em ; margin-bottom: 2em;
+}
+.fb-line {
+    font-size: 3.6em; color: white;
+    margin-bottom: 0.2em;
+}
+#customer-img{
+    margin-top:4em;
+    width:110px; height: 110px;
+    border-radius: 50%;
+}
+.customer-name{
+    margin-top:0.9em;
+    font-size: 1.5em; color: rgb(255, 236, 200)
+}
+
+.strategy-container{
+    margin-top: 5em;
+    display: flex; flex-direction: column; align-items: center;
+}
+.st-seperator{
+    width: 120px;
+    margin-top:1rem;
+    opacity: 0.8;
+}
+.st-text1{
+    font-size: 1em; color:wheat;
+}
+.st-text2{
+    margin-top: 0.4em; margin-bottom: 1em;
+    font-size: 3.5em;  color:white
+}
+.pts-container{
+    display: flex; justify-content: center;
+}  
+.sq1,.sq2,.sq3,.sq4{
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width:16em;
+    background-color: #22222b;
+    margin-right: 3.5em;
+    padding:20px 0px;
+} 
+.pt-title{
+    margin-top: 0.6em; margin-bottom: 0.8em;
+    font-size: 1.6em; color: white;
+}
+.pt-desc{
+    margin-left: 2.5em;
+    font-size: 1em; color: rgb(177, 177, 177);
+}
+
+.special-dish-img{
+    width:50vw; 
+    height: 100vh;
+    display: inline-block;
+}
+.badge{
+    width:2em; height:3em;
+    margin-top: 9.7%; margin-left:5em;
+}
+.special-dish-container{
+    display: flex; flex-direction: column; align-items: start; justify-content: center;
+    margin-left:2.3em;
+}
+.sd-title{
+    font-size: 1em; color:wheat
+}
+.sd-name{
+    margin-top: 0.5em;
+    font-size: 3.5em; color:white
+}
+.sd-desc{
+    margin-top: 1em;
+    font-size:1.1em; color:rgb(224, 222, 222); line-height: 1.6em;
+    width: 60%;
+}
+.sd-price{
+    display: flex; flex-direction: row; justify-content: center; align-items: center;
+    margin-top: 2.1em;
+    gap: 1.7em;
+}
+.sd1-price{
+    font-size: 1.5em; color:rgb(182, 182, 182)
+}
+.sd2-price{
+    font-size: 2em; color: wheat;
+}
+.sd-button{
+    margin-top: 3em;
+    font-size: 1em; word-spacing: 6px;
+    display: flex; align-items: center; justify-content: center;
+    background-color: transparent; color: whitesmoke;
+    border: 3px solid rgb(188, 145, 89); color:rgb(193, 178, 148);
+    padding:1.2em 3.5em;
+}
+.bg-image1{
+    position: absolute;
+    top:0em; right:0em;
+    z-index: 0;
+}
+.bg-image2{
+    position: absolute;
+    bottom:0; right:0;
+}
+
+
+.page7-container{
+    display: grid; 
+    justify-content: center; 
+    align-items: center;
+    grid-template-columns: 200px 650px 200px;
+    gap:4em;
+}
+.p7-section1{
+    display: flex; flex-direction: column; 
+    justify-content: center; align-items: center;
+}
+.p7-tags{
+    margin-bottom: 3em;
+    color:rgb(164, 164, 164)
+}
+.p7-section2{
+    position: relative; 
+    display: flex;
+    background-color: #080809;
+}
+.s2-middle{
+    z-index: 1;
+    height: 650px; width:650px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+#p7-pattern{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.border-pattern{
+    height: 650px;
+}
+.p7-section3{
+    display: flex; flex-direction: column; 
+    justify-content: center; align-items: center;
+    margin-left: 2em;
+}
+.p7-logo{
+    display: flex; justify-content: center;
+    margin-bottom:3em;
+}
+.p7-logo-name{
+    margin-bottom:0.6em;
+}
+.p7-common{
+    font-size: 1.1em; color:rgb(184, 184, 184);
+    margin-bottom: 13px;
+}
+.p7-offers{
+    margin-top: 1.7em;
+    font-size: 2.4em; color: white;
+}
+.p7-button{
+    margin-top: 3em;
+    display: flex;
+    margin-left:1em ;
+}
+.p7-email{
+    margin-left: -1em;
+    padding-top:1em; padding-bottom: 1em;  padding-right:6em; padding-left: 2em;
+    border:1.8px solid rgb(37, 37, 37);
+    font-size: 1rem; background-color: #18181a; color: whitesmoke;
+}
+.p7-email::placeholder{
+    color: whitesmoke;
+}
+.p7-book-button{
+    background-color: burlywood; color: black;
+    font-size: 0.8em; font-weight: 900;
+    padding: 20px 40px;
+}
+.rights-section{
+    display: flex; justify-content: center; align-items: center;
+    margin-left: 26em; width:20em;
+}
+.cright-img{
+    width:25px; height:25px;opacity: 0.5; margin-right: 8px;
+}
+.cright-text{
+    word-spacing: 4px;
+    font-size: 14px; color:rgb(182, 182, 182);
+}
