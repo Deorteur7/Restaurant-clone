@@ -240,6 +240,7 @@ main .section-4 p{
     width:40rem;
     font-size: 1rem;
     color: white;
+    text-align: center;
 }
 .menu-item{
     display: flex;
