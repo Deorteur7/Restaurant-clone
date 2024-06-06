@@ -22,8 +22,7 @@ body{
     overflow-x:hidden;
 }
 .page4{
-    width:100vw; height: 1315.6px;
-    overflow-x: hidden;
+    width:100%;
 }
 .part1{
     width:100vw; height: 90vh ;
@@ -51,9 +50,9 @@ body{
     display: flex;
 }
 .page7{
-    width:100vw; height: 100vh;
-    background: no-repeat center/auto url("images/footer-bg.jpg");
-    overflow-x: hidden;
+    width: 100%;
+    background: url("images/footer-bg.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .header1{
@@ -588,14 +587,14 @@ main .section-4 p{
 
 
 .page7-container{
-    display: grid; 
-    justify-content: center; 
+    display: grid;
+    justify-content: center;
     align-items: center;
     grid-template-columns: 200px 650px 200px;
     gap:4em;
 }
 .p7-section1{
-    display: flex; flex-direction: column; 
+    display: flex; flex-direction: column;
     justify-content: center; align-items: center;
 }
 .p7-tags{
@@ -603,13 +602,13 @@ main .section-4 p{
     color:rgb(164, 164, 164)
 }
 .p7-section2{
-    position: relative; 
+    position: relative;
     display: flex;
     background-color: #080809;
 }
 .s2-middle{
     z-index: 1;
-    height: 650px; width:650px;
+    width:650px;
     display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
 #p7-pattern{
