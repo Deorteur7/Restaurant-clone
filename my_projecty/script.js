@@ -1,41 +1,41 @@
 let menu123= [{
     id: 'menu1',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/manchuria1.jpg',
+    dish_name: 'Veg Manchuria' ,
+    dish_price: '250.00/-',
+    dish_ingredients: 'Cabbage, Hot sauce, Spring onion, Black Pepper, Garlic, Vinegar'
 }, {
     id: 'menu2',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/paratha.jpg',
+    dish_name: 'Paratha' ,
+    dish_price: '200.00/-',
+    dish_ingredients: 'Potato, Herbs, Flour, Turmeric, Butter, Carrom seeds, Pickle, Raita'
 }, {
     id: 'menu3',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/pulau.jpg',
+    dish_name: 'Kashmiri Pulao' ,
+    dish_price: '330.00/-',
+    dish_ingredients: 'Basmati Rice, Raisens, cinnamon, Cloves, Cashew, Cardamom, Bay-leaves, Peas'
 }];
 
 let menu456= [{
     id: 'menu4',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/panner-tikka.webp',
+    dish_name: 'Paneer Tikka' ,
+    dish_price: '270.00/-',
+    dish_ingredients: 'Paneer, Tomato, Capsicum, Bell Pepper, lemon, Mint Chutney, Onion, Corriander '
 }, {
     id: 'menu5',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/Malai-Kofta.jpg',
+    dish_name: 'Malai Kofta' ,
+    dish_price: '300.00/-',
+    dish_ingredients: 'Paneer, Tomato, Potatoes, Cashew, Cloves, Bay leaves, Garlic, Black Pepper, Herbs, Cream'
 }, {
     id: 'menu6',
-    image: 'images/menu-1.png',
-    dish_name: 'Greek Salad' ,
-    dish_price: '$50',
-    dish_ingredients: 'Tomatoes, Potatoes, Tofu, Ginger, Ghost-pepper, olives, onion, cheese'
+    image: 'images/desert.jpg',
+    dish_name: 'Gulab Jamun' ,
+    dish_price: '180.00/-',
+    dish_ingredients: 'khowa, Saffron, Flour, Cashew, Almond, Milk, Ghee, Sugar Syrup, Rose water '
 }];
 
 
@@ -77,3 +77,4 @@ menu456.forEach((menu_obj) => {
 });
 
 document.querySelector(".right-div").innerHTML = menuHTML2;
+
