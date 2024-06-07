@@ -78,3 +78,20 @@ menu456.forEach((menu_obj) => {
 
 document.querySelector(".right-div").innerHTML = menuHTML2;
 
+const dishDetails = document.querySelectorAll('.dish-details');
+const dishImg = document.querySelectorAll('.dish-img');
+const dishName = document.querySelectorAll('.dish-name');
+
+dishDetails.forEach((detail, index) => {
+    detail.addEventListener('mouseover', () => {
+        dishImg[index].style.opacity = '0.7';
+        dishName[index].style.color = "wheat";
+    });
+
+    detail.addEventListener('mouseout', () => {
+        dishImg[index].style.opacity = '1';
+        dishName[index].style.color = ""; 
+    });
+});
+
+
