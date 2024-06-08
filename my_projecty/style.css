@@ -177,7 +177,7 @@ body{
     z-index: 2;
 }
 .ctr1:hover{
-    color: white;
+    color: wheat;
     font-weight: 900;
 }
 .ctr::before{
@@ -185,7 +185,7 @@ body{
     position: absolute;
     left:0;
     width: 100%; height: 0%;
-    background: rgb(0, 0, 0);
+    background: rgb(18, 18, 18);
     transition: 0.8s;
     z-index: -1;
 }
@@ -481,11 +481,13 @@ main .section-4 p{
     padding-right:2em;
     margin-left:-2em;
     border-right: 1px solid grey;
+    z-index: 5;
 }
 .right-div{
     display: flex; flex-direction: column; gap:4em;
     margin-right: -2em;
     margin-left:6em;
+    z-index: 5;
 }
 .dish{
     display: grid; grid-template-columns: 100px 1fr; column-gap: 15px;
@@ -496,12 +498,6 @@ main .section-4 p{
     border-radius: 20px;
     object-fit: auto;
 }
-/* .dish-name:hover{
-    color:wheat;
-}
-.dish-img:hover{
-    opacity: 0.7;
-} */
 .dish-desc{
     display: flex; justify-content: space-between;
 }
